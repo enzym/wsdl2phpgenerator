@@ -65,7 +65,7 @@ class PhpDocComment
      */
     public function __construct($description = '')
     {
-        $this->description = $description;
+        $this->description = (empty($description)) ? '' : $description;
         $this->access      = null;
         $this->var         = null;
         $this->params      = [];
