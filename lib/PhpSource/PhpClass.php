@@ -149,7 +149,7 @@ class PhpClass extends PhpElement
 
 		$ret .= 'class ' . $this->identifier;
 
-		if (strlen($this->extends) > 0) {
+		if ($this->extends && (strlen($this->extends)>0) ) {
 			$ret .= ' extends ' . $this->extends;
 		}
 
